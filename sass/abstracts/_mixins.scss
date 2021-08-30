@@ -1,0 +1,6 @@
+@mixin illustartion__layout{
+    grid-column: center-start / center-end;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+

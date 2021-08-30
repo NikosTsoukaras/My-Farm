@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+
+<!--
+Theme: Keen - The Ultimate Bootstrap Admin Theme
+Author: KeenThemes
+Website: http://www.keenthemes.com/
+Contact: support@keenthemes.com
+Follow: www.twitter.com/keenthemes
+Dribbble: www.dribbble.com/keenthemes
+Like: www.facebook.com/keenthemes
+License: You must have a valid license purchased only from https://themes.getbootstrap.com/product/keen-the-ultimate-bootstrap-admin-theme/ in order to legally use the theme for your project.
+-->
+<html lang="en">
+
+	<!-- begin::Head -->
+	<head>
+		<base href="../../">
+		<meta charset="utf-8" />
+		<title>MyFarm | Εγγραφή</title>
+		<meta name="description" content="User login example">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+		<!--begin::Fonts -->
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700">
+		<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+		<!--end::Fonts -->
+
+		<!--begin::Page Custom Styles(used by this page) -->
+		<link href="assets/css/pages/login/login-v2.css" rel="stylesheet" type="text/css" />
+
+		<!--end::Page Custom Styles -->
+
+		<!--begin::Global Theme Styles(used by all pages) -->
+		<link href="assets/plugins/global/plugins.bundle.css" rel="stylesheet" type="text/css" />
+		<link href="assets/css/style.bundle.css" rel="stylesheet" type="text/css" />
+
+		<!--end::Global Theme Styles -->
+
+		<!--begin::Layout Skins(used by all pages) -->
+		<link href="assets/css/skins/header/base/light.css" rel="stylesheet" type="text/css" />
+		<link href="assets/css/skins/header/menu/light.css" rel="stylesheet" type="text/css" />
+		<link href="assets/css/skins/brand/navy.css" rel="stylesheet" type="text/css" />
+		<link href="assets/css/skins/aside/navy.css" rel="stylesheet" type="text/css" />
+
+		<!--end::Layout Skins -->
+		<link rel="shortcut icon" href="assets/media/logos/favicon.png" />
+	</head>
+
+	<!-- end::Head -->
+
+	<!-- begin::Body -->
+	<body class="kt-login-v2--enabled kt-quick-panel--right kt-demo-panel--right kt-offcanvas-panel--right kt-header--fixed kt-header-mobile--fixed kt-subheader--enabled kt-subheader--transparent kt-aside--enabled kt-aside--fixed kt-page--loading">
+
+		<!-- begin:: Page -->
+		<div class="kt-grid kt-grid--ver kt-grid--root">
+			<div class="kt-grid__item   kt-grid__item--fluid kt-grid  kt-grid kt-grid--hor kt-login-v2" id="kt_login_v2">
+
+				<!--begin::Item-->
+				<div class="kt-grid__item  kt-grid--hor">
+
+					<!--begin::Heade-->
+					<div class="kt-login-v2__head">
+						<div class="kt-login-v2__logo">
+							<a href="index.html">
+								<img src="assets/media/logos/logo_color2.svg" class="logo_login_signin" alt="" />
+							</a>
+						</div>
+					</div>
+
+					<!--begin::Head-->
+				</div>
+
+				<!--end::Item-->
+
+				<!--begin::Item-->
+				<div class="kt-grid__item  kt-grid  kt-grid--ver  kt-grid__item--fluid">
+
+					<!--begin::Body-->
+					<div class="kt-login-v2__body">
+
+						<!--begin::Wrapper-->
+						<div class="kt-login-v2__wrapper">
+							<div class="kt-portlet border mx-width-650" >
+                                <div class="kt-portlet__head justify-content-center">
+                                    <div class="kt-portlet__head-label">
+                                        <h3 class="kt-portlet__head-title fnt-20">Εγγραφείτε στο MyFarm</h3>
+                                    </div>
+                                </div>
+
+								<!--begin::Form-->
+                                <form class="kt-form kt-form--label-right" id="signup_form" novalidate="novalidate">
+                                    <div class="kt-portlet__body">
+										<div id="status"></div>
+                                        <div class="form-group row">
+                                            <label class="col-form-label col-lg-3 col-sm-12">Email *</label>
+                                            <div class="col-lg-9 col-md-9 col-sm-12">
+                                                <input type="text" class="form-control" name="email" placeholder="Email">
+                                                <span class="form-text text-muted">Παρακαλώ συμπληρώστε το E-mail.</span>
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+											<label class="col-form-label col-lg-3 col-sm-12">Ονοματεπώνυμο *</label>
+											<div class="col-lg-9 col-md-9 col-sm-12">
+												<div class="typeahead">
+													<input class="form-control" type="text" name="fullname" placeholder="Ονοματεπώνυμο">
+												</div>
+												<span class="form-text text-muted">Παρακαλώ συμπληρώστε το όνομα και το επίθετο σας.</span>
+											</div>
+										</div>
+										<div class="form-group row">
+											<label class="col-form-label col-lg-3 col-sm-12">Κωδικός *</label>
+											<div class="col-lg-9 col-md-9 col-sm-12">
+												<div class="typeahead">
+													<input class="form-control" type="password" id="password" name="password" placeholder="Κωδικός">
+												</div>
+												<span class="form-text text-muted">Ο κωδικός πρέπει περιέχει τουλάχιστον 6 χαρακτήρες.</span>
+											</div>
+										</div>
+										<div class="form-group row">
+											<label class="col-form-label col-lg-3 col-sm-12">Επαλήθευση κωδικού *</label>
+											<div class="col-lg-9 col-md-9 col-sm-12">
+												<div class="typeahead">
+													<input class="form-control" type="password" name="password_confirm" placeholder="Επαλήθευση κωδικού">
+												</div>
+												<span class="form-text text-muted">Συμπληρώστε ξανά τον κωδικό σας.</span>
+											</div>
+										</div>
+										
+                                       
+                                    </div>
+									<div class="kt-portlet__foot text-center">
+										<div class="kt-form__actions">
+											<div class="row">
+												<div class="col-lg-12">
+													<button type="submit" name="signup-submit"class="btn btn-brand">Εγγραφή</button>
+													<button type="reset" class="btn btn-secondary">Ακύρωση</button>
+												</div>
+											</div>
+										</div>
+									</div>
+                                </form>
+
+                                <!--end::Form-->
+                            </div>
+						</div>
+
+						<!--end::Wrapper-->
+
+						<!--begin::Image-->
+						<div class="kt-login-v2__image">
+							<img src="assets/media/misc/bg_icon.svg" alt="">
+						</div>
+
+						<!--begin::Image-->
+					</div>
+
+					<!--begin::Body-->
+				</div>
+
+				<!--end::Item-->
+
+				<!--begin::Item-->
+				<div class="kt-grid__item">
+					<div class="kt-login-v2__footer">
+						<!-- <div class="kt-login-v2__link">
+							<a href="#" class="kt-link kt-font-brand">Privacy</a>
+							<a href="#" class="kt-link kt-font-brand">Legal</a>
+							<a href="#" class="kt-link kt-font-brand">Contact</a>
+						</div> -->
+						<div class="kt-login-v2__info">
+							<a href="#" class="text-white ">&copy; 2020 MyFarm</a>
+						</div>
+					</div>
+				</div>
+
+				<!--end::Item-->
+			</div>
+		</div>
+
+		<!-- end:: Page -->
+
+		<!-- begin::Global Config(global config for global JS sciprts) -->
+		<script>
+			var KTAppOptions = {
+				"colors": {
+					"state": {
+						"brand": "#10ac84",
+						"metal": "#c4c5d6",
+						"light": "#ffffff",
+						"accent": "#00c5dc",
+						"primary": "#5867dd",
+						"success": "#34bfa3",
+						"info": "#36a3f7",
+						"warning": "#ffb822",
+						"danger": "#fd3995",
+						"focus": "#9816f4"
+					},
+					"base": {
+						"label": [
+							"#c5cbe3",
+							"#a1a8c3",
+							"#3d4465",
+							"#3e4466"
+						],
+						"shape": [
+							"#f0f3ff",
+							"#d9dffa",
+							"#afb4d4",
+							"#646c9a"
+						]
+					}
+				}
+			};
+		</script>
+
+		<!-- end::Global Config -->
+
+		<!--begin::Global Theme Bundle(used by all pages) -->
+		<script src="assets/plugins/global/plugins.bundle.js" type="text/javascript"></script>
+		<script src="assets/js/scripts.bundle.js" type="text/javascript"></script>
+
+		<!--end::Global Theme Bundle -->
+
+		<!--begin::Page Scripts(used by this page) -->
+		<script src="assets/js/pages/components/forms/validation/controls.js" type="text/javascript"></script>
+		
+
+		<!--end::Page Scripts -->
+	</body>
+
+	<!-- end::Body -->
+</html>

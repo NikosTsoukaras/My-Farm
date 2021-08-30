@@ -1,0 +1,59 @@
+.btn {
+    
+    text-transform: uppercase;
+    padding: .8rem 2rem;
+    display: inline-block;
+    border-radius: 1px;
+    font-size: 1.6rem;
+    font-weight: 400;
+    transition: all .5s;
+
+    &--small{
+        text-transform: uppercase;
+        padding: .5rem 1rem;
+        display: inline-block;   
+        border-radius: 1px;
+        font-size: 1rem;
+        font-weight: 700;
+        letter-spacing: 0.1rem;
+    }
+
+
+    &--fill,
+    &--outline {
+        border: 0.2rem solid #fff;
+    }
+
+
+    &--fill{
+        background: #fff;
+        color: $color-grey-dark;
+    }
+
+
+
+
+    &--outline{
+        color: #fff;
+    }
+
+    &--icon{
+        span {
+            opacity: 0;
+            margin-left: 0;
+            transition: all .3s ease-out;
+        }
+
+        &:hover {
+            & span {
+                display: inline-block;
+                margin-left: 1.5rem;
+                opacity: 1;
+            }
+        }
+    }
+
+    
+    
+}
+

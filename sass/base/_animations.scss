@@ -1,0 +1,45 @@
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes rollDown {
+    0% {
+        opacity: 0;
+        transform: scaleY(0) ;
+        
+    }
+
+
+    100% {
+        opacity: 1;
+        transform: scaleY(1) ;
+    }
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 100%;
+        transform: scaleY(1);
+    }
+
+    50%{
+        opacity: 0.9;
+    }
+
+    100% {
+        opacity: 0;
+        transform: scaleY(0);
+    }
+}
+
+.fadeOut{
+    animation: 0.21s fadeOut cubic-bezier(1,1.09,.69,.65) !important;
+    transform-origin: top !important;
+}
+
+

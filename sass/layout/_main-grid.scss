@@ -1,0 +1,70 @@
+
+.main-container {
+    display: grid;
+    grid-template-rows: 100vh  80rem minmax(50rem, 70rem) 90rem 50rem 20rem;
+    grid-template-columns: [full-start] 13vw [center-start] repeat(8,[col-start] minmax(min-content,14rem) [col-end]) [center-end] 13vw [full-end];
+    overflow-x: hidden;
+
+    color: $color-grey-dark-4;
+
+ 
+}
+
+.header {
+    grid-column: full-start / full-end;
+    grid-row: 1 / 2;
+    
+    display: grid;
+
+    grid-template-columns: 13vw 35vw 4vw 35vw 13vw;
+    grid-template-rows: 10vh 35vh 25vh 30vh;
+}
+
+.features {
+    grid-column: center-start / center-end;
+    grid-row: 2 / 3;
+    align-self: center;
+    
+    display: grid;
+
+    grid-template-rows: max-content max-content;
+    grid-template-columns: repeat(3 , 1fr);
+    grid-gap: 3rem;
+}
+
+.about {
+    @include illustartion__layout;
+    align-self: center;
+    grid-row: 3 / 4;
+}
+
+
+.main-features {
+    grid-row: 4 / 5;
+    grid-column: center-start / center-end;
+    align-content: center;
+
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 20% 60% 20%;
+
+}
+
+.calendar  {
+    @include illustartion__layout;
+    align-content: center;
+
+    grid-row: 5 / 6;
+}
+
+footer {
+    grid-row: 6 / 7;
+    grid-column: 1 / -1;
+    overflow: visible;
+
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: max-content max-content;
+
+    align-items: end;
+}
