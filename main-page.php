@@ -34,7 +34,6 @@
 		<link href="assets/css/skins/header/menu/light.css" rel="stylesheet" type="text/css" />
 		<link href="assets/css/skins/brand/light.css" rel="stylesheet" type="text/css" />
 		<link href="assets/css/skins/aside/light.css" rel="stylesheet" type="text/css" />
-		<link href="assets/css/skins/aside/test.css" rel="stylesheet" type="text/css" />
 		<link rel="shortcut icon" type="image/png" href="favicon.png">
 
 		<!--end::Layout Skins -->
